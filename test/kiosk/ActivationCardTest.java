@@ -15,12 +15,14 @@ import static org.junit.Assert.*;
  */
 public class ActivationCardTest {
     
+    ActivationCard card_null;
                 
     public ActivationCardTest() {
     }
     
     @Before
     public void setUp() {
+        card_null = new ActivationCard("");
     }
 
     /**
@@ -35,4 +37,15 @@ public class ActivationCardTest {
         assertEquals(card_true, card_expect);
         
     }
+
+    /**
+     * Test of erase method, of class ActivationCard.
+     */
+    @Test
+    public void testErase() {
+        System.out.println("erase");
+        this.card_null.erase();
+        assertEquals(true, this.card_null.getCode()==null);
+    }
+    
 }
