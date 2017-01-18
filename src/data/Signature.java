@@ -8,7 +8,7 @@ package data;
 /**
  * @author ivan
  * 
- * Represents a party.
+ * Represents a signature.
  */
 
 final public class Signature {
