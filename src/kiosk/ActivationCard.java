@@ -13,7 +13,7 @@ package kiosk;
  */
 public class ActivationCard {
     
-    private ActivationCard card;
+    
     private String code;
     
     public ActivationCard(String code){
@@ -33,13 +33,13 @@ public class ActivationCard {
         //boolean status_card;
         
         if (code != null){
-            return false;
+            return true;
         }
         //ActivationCard card = new ActivationCard("as23e");
-        return true;
+        return false;
     }
     
     public void erase() {
-        card.code = null;
+        code = null;
     }
 }
